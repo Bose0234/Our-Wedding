@@ -336,6 +336,24 @@ body {
 
 }
 
+@media (max-width: 767.98px) and (max-height: 700px) {
+
+    .heart-svg {
+        width: 210px;
+    }
+
+    .rising-text {
+        bottom: 165px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    #enterWedding {
+        bottom: 85px;
+    }
+
+}
+
 /* Preloader CSS End */
 
 /* =========================================
