@@ -188,6 +188,113 @@ body {
     /* Smooth transition for fade-out */
 }
 
+/* =========================================
+   ENTER BUTTON
+========================================= */
+
+#enterWedding {
+    position: absolute;
+
+    left: 50%;
+    bottom: 275px;
+
+    transform: translateX(-50%);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 13px 28px;
+
+    min-width: 130px;
+
+    border: 1px solid #d98270;
+    border-radius: 50px;
+
+    background: #d98270;
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(217, 130, 112, 0.18);
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Arrow */
+
+#enterWedding::after {
+    content: "→";
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Hover */
+
+#enterWedding:hover {
+    background: #ce7664;
+    border-color: #ce7664;
+
+    transform: translateX(-50%) translateY(-2px);
+
+    box-shadow: 0 12px 25px rgba(217, 130, 112, 0.25);
+}
+
+
+/* Active */
+
+#enterWedding:active {
+    transform: translateX(-50%);
+}
+
+
+/* Focus */
+
+#enterWedding:focus {
+    outline: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767.98px) {
+
+    #enterWedding {
+        bottom: 235px;
+
+        padding: 12px 25px;
+
+        min-width: 120px;
+
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+}
+
 /* Preloader CSS End */
 
 /* =========================================

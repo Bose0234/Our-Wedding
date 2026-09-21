@@ -1,18 +1,68 @@
-// ================= PRELOADER =================
-window.addEventListener('load', function () {
-  const preloader = document.getElementById('preloader');
-  if (!preloader) return;
+// ================= PRELOADER + AUDIO =================
 
-  setTimeout(() => {
-    preloader.classList.add('fade-out');
+window.addEventListener("load", function () {
 
-    setTimeout(() => {
-      preloader.remove();
-    }, 1000);
+    const preloader = document.getElementById("preloader");
+    const bgMusic = document.getElementById("bgMusic");
+    const enterButton = document.getElementById("enterWedding");
 
-  }, 8000); // reduced from 8000 because we like usable websites
+
+    // =========================================
+    // START MUSIC
+    // =========================================
+
+    function startMusic() {
+
+        if (!bgMusic) return;
+
+        bgMusic.volume = 1;
+
+        bgMusic.play()
+            .then(function () {
+
+                console.log("Wedding music started.");
+
+            })
+            .catch(function (error) {
+
+                console.log("Music blocked:", error);
+
+            });
+
+    }
+
+
+    // =========================================
+    // ENTER BUTTON
+    // =========================================
+
+    if (enterButton) {
+
+        enterButton.addEventListener("click", function () {
+
+            // Start music because this is a real user click
+            startMusic();
+
+
+            // Hide preloader
+            if (preloader) {
+
+                preloader.classList.add("fade-out");
+
+                // Remove after fade animation
+                setTimeout(function () {
+
+                    preloader.remove();
+
+                }, 1000);
+
+            }
+
+        });
+
+    }
+
 });
-
 
 // ================= Header =================
 document.addEventListener("DOMContentLoaded", function () {
