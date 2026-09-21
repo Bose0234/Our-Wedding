@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourav Weds Mousumi</title>
+
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main CSS Link -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Favicon Link -->
+   <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+
+  <audio id="bgMusic" autoplay loop muted>
+  <source src="assets/Parineeta.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Cursor Animataion Section Start -->
+
+  <!-- <div class="cursor-main"></div> -->
+
+  <!-- Cursor Animataion Section End -->
+
+  <!-- Preloader Start -->
+
+  <div id="preloader">
+        <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 831 509">
+            <path class="heart heart--is-small"
+                d="M444.44,386.14c1.63-56.83,22.45-110.89,42.05-120.77,19.6-9.88,44.18.53,40.96,36.43,28.54-14.75,68.81-13.58,72.18,16.2,2.82,24.86-27.91,34.7-62.9,37.01-34.98,2.31-67.64,12.11-92.3,31.13Z" />
+            <path class="heart heart--is-large"
+                d="M441,401.62c-10.03-35.56-29.5-70.5-43-113s-8.18-96.55,20-98c18.22-.94,27.5,15.4,30,42,51.67-71.77,131.93-55.64,145.5-33.5,22.26,36.34-23.06,66.74-59.5,85.5-54.49,28.06-75.94,72.67-93,117Z" />
+            <path class="line"
+                d="M53.5,319.12c104.85-75.98,214.82-13.62,266,17,49.53,29.64,72.22,56.76,92,50,30.52-10.43-48.19-89.59-55-141-4.55-34.38,12.5-57.5,41-54s34.96,28.4,32,63c13.71-42.57,60.57-69.96,88-68,33.48,2.39,46.34,37.12,0,68-59.6,39.72-81.13,107.21-80,126-23.44-57.19-32.08-99.35-6.5-114.5,32.51-19.25,63.84,2.79,55,41,22.64-35.77,51.42-38.85,65-25,18.95,19.33-2.51,41.08-33,53-26.82,10.49-46.45,19.63-59,34,48.29-70.94,94.69-86.65,172-93,65.87-5.41,112.71,26.72,187,17" />
+        </svg>
+        <div class="overlay"></div>
+        <div class="rising-text">A Bond Forever</div>
+    </div>
+
+  <!-- Preloader End -->
+
+<!-- Header Start -->
+<nav class="navbar navbar-expand-lg bg-light wedding-header">
+
+    <div class="container">
+
+        <!-- =========================================
+             MOBILE HEADER
+        ========================================== -->
+        <div class="mobile-header w-100 d-lg-none">
+
+            <!-- Mobile Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/main-logo.png" alt="Logo">
+            </a>
+
+            <!-- Hamburger -->
+            <button class="navbar-toggler"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+
+        <!-- =========================================
+             DESKTOP NAVIGATION
+        ========================================== -->
+        <div class="desktop-header d-none d-lg-flex w-100 justify-content-center align-items-center">
+
+            <!-- Left Navigation -->
+            <ul class="navbar-nav flex-row">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#the-date">
+                        The Date
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#wedding">
+                        Wedding
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Center Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/main-logo.png" alt="Logo">
+            </a>
+
+
+            <!-- Right Navigation -->
+            <ul class="navbar-nav flex-row">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#love-story">
+                        Love Story
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">
+                        Gallery
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =========================================
+             MOBILE MENU OVERLAY
+        ========================================== -->
+        <div class="mobile-menu-overlay"></div>
+
+
+        <!-- =========================================
+             MOBILE SLIDE-IN MENU
+        ========================================== -->
+        <div class="mobile-menu" id="weddingMenu">
+
+            <!-- Close Button -->
+            <button class="mobile-menu-close"
+                    type="button"
+                    aria-label="Close menu">
+
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- Mobile Navigation -->
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#date">
+                        The Date
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#wedding">
+                        Wedding
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#love-story">
+                        Love Story
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">
+                        Gallery
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- Header End -->
+
+  <!-- Banner Start -->
+
+  <section class="banner" id="the-date">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-5 img-side zoom-container" data-aos="fade-right">
+          <img src="assets/updated-banner.png" alt="" width="100%">
+        </div>
+        <div class="col-md-7">
+          <div class="bnr-text-content" data-aos="fade-left">
+            <h1>Sourav & Mousumi</h1>
+            <h3>Save The Date: 29th January, 2027</h3>
+            <p>Welcome to the Wedding Ceremony of Sourav & Mousumi!<br>
+              We are delighted to have you join us as we celebrate the beautiful union of two hearts, two souls, and two
+              families.</p>
+            <div class="shape-div text-center mt-4">
+              <img src="assets/divdr.png" alt="" width="70%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner End -->
+
+  <!-- Timer Start -->
+  <section class="timer" id="wedding">
+    <div class="container">
+      <div class="d-flex justify-content-between flex-wrap" id="countdown">
+        <div class="timer-box">
+          <div class="timer-number" id="years">00</div>
+          <div class="timer-label">Years</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-number" id="months">00</div>
+          <div class="timer-label">Months</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-number" id="days">00</div>
+          <div class="timer-label">Days</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-number" id="hours">00</div>
+          <div class="timer-label">Hours</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-number" id="minutes">00</div>
+          <div class="timer-label">Minutes</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-number" id="seconds">00</div>
+          <div class="timer-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Timer End -->
+
+  <!-- Story Section Start -->
+
+  <section class="story-section section-padding" id="love-story">
+    <div class="container" bis_skin_checked="1">
+      <div class="row" bis_skin_checked="1">
+        <div class="wpo-section-title-s2" bis_skin_checked="1">
+          <h2>Our Love Story</h2>
+          <div class="section-title-img" bis_skin_checked="1">
+            <div class="round-ball" bis_skin_checked="1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" bis_skin_checked="1">
+        <div class="col col-xs-12" bis_skin_checked="1">
+          <div class="story-timeline" bis_skin_checked="1">
+            <div class="round-shape" bis_skin_checked="1"></div>
+            <div class="row" bis_skin_checked="1">
+              <div class="col col-lg-6 col-12" bis_skin_checked="1">
+                <div class="story-text right-align-text" bis_skin_checked="1">
+                  <h3>First time we meet</h3>
+                  <span class="date">Nov 12,2021</span>
+                  <p>I must explain to you how all this mistaken idea of denouing pleasure and
+                    praising pain was born and I will give you com acount of system,the actual
+                    teach</p>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-12" bis_skin_checked="1">
+                <div class="img-holder" bis_skin_checked="1">
+                  <img src="assets/date-2.png" alt="" class="img img-responsive">
+                  <div class="story-shape-img" bis_skin_checked="1">
+                    <img src="assets/shape-img.png" alt="" width="100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" bis_skin_checked="1">
+              <div class="col col-lg-6 col-12" bis_skin_checked="1">
+                <div class="img-holder right-align-text left-site" bis_skin_checked="1">
+                  <img src="assets/meet.png" alt="" class="img img-responsive">
+                  <div class="story-shape-img" bis_skin_checked="1">
+                    <img src="assets/shape-img.png" alt="" width="100%">
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-12 text-holder" bis_skin_checked="1">
+                <span class="heart">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </span>
+                <div class="story-text" bis_skin_checked="1">
+                  <h3>First Date</h3>
+                  <span class="date">Dec 25,2021</span>
+                  <p>I must explain to you how all this mistaken idea of denouing pleasure and
+                    praising pain was born and I will give you com acount of system,the actual
+                    teach</p>
+                </div>
+              </div>
+            </div>
+            <div class="row" bis_skin_checked="1">
+              <div class="col col-lg-6 col-12 text-holder right-heart" bis_skin_checked="1">
+                <span class="heart">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </span>
+                <div class="story-text right-align-text" bis_skin_checked="1">
+                  <h3>Marriage Proposal</h3>
+                  <span class="date">Nov 12,2021</span>
+                  <p>I must explain to you how all this mistaken idea of denouing pleasure and
+                    praising pain was born and I will give you com acount of system,the actual
+                    teach</p>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-12" bis_skin_checked="1">
+                <div class="img-holder right-align-text" bis_skin_checked="1">
+                  <img src="assets/engage.png" alt="" class="img img-responsive">
+                  <div class="story-shape-img" bis_skin_checked="1">
+                    <img src="assets/shape-img.png" alt="" width="100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" bis_skin_checked="1">
+              <div class="col col-lg-6 col-12" bis_skin_checked="1">
+                <div class="img-holder video-holder left-site" bis_skin_checked="1">
+                  <img src="assets/weeding.png" alt="" class="img img-responsive">
+                  <div class="story-shape-img" bis_skin_checked="1">
+                    <img src="assets/shape-img.png" alt="" width="100%">
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-12 text-holder" bis_skin_checked="1">
+                <span class="heart">
+                  <i class="fa fa-diamond" aria-hidden="true"></i>
+                </span>
+                <div class="story-text" bis_skin_checked="1">
+                  <h3>Our Marriage</h3>
+                  <span class="date">Jan 29,2026</span>
+                  <p>I must explain to you how all this mistaken idea of denouing pleasure and
+                    praising pain was born and I will give you com acount of system,the actual
+                    teach</p>
+                </div>
+              </div>
+            </div>
+            <div class="row" bis_skin_checked="1">
+              <div class="col offset-lg-6 col-lg-6 col-12 text-holder" bis_skin_checked="1">
+                <span class="heart">
+                  <i class="fa fa-venus-mars" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+  </section>
+
+  <!-- Story Section End -->
+
+  <!-- Gallery Section Start -->
+
+<section class="gallery-section" id="gallery">
+
+      <div class="row" bis_skin_checked="1">
+        <div class="wpo-section-title-s2" bis_skin_checked="1">
+          <div class="section-title-simg" bis_skin_checked="1" height="0">
+            <img src="assets/images/section-title2.png" alt="">
+          </div>
+          <h2>Our Moments</h2>
+          <div class="section-title-img" bis_skin_checked="1">
+            <div class="round-ball" bis_skin_checked="1"></div>
+          </div>
+        </div>
+      </div>  
+
+<div class="editorial-grid">
+  <div class="img a"><img src="assets/we-1.jpeg"></div>
+  <div class="img b"><img src="assets/we-2.jpg"></div>
+  <div class="img c"><img src="assets/we-3.jpg"></div>
+  <div class="img d"><img src="assets/we-4.JPG"></div>
+  <div class="img e"><img src="assets/we-5.JPG"></div>
+  <div class="img f"><img src="assets/we-11.png"></div>
+  <div class="img g"><img src="assets/we-12.png"></div>
+  <div class="img h"><img src="assets/we-8.jpg"></div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <span class="close">&times;</span>
+  <img>
+</div>
+</section>
+  <!-- Gallery Section End -->
+
+   <!-- Footere Section Start -->
+
+
+  <footer>
+    <h3>And so, our forever begins.</h3>
+  </footer>
+
+   <!-- Footer Section End -->
+
+
+  <!-- Bootstrap Bundle Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main Script Link -->
+  <script src="script.js"></script>
+
+  <!-- AOS Link -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- AOS Initialize -->
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
