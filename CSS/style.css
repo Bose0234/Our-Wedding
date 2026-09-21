@@ -278,12 +278,34 @@ body {
 }
 
 
-/* Mobile */
+/* =========================================
+   MOBILE PRELOADER FIX
+========================================= */
 
 @media (max-width: 767.98px) {
 
+    /* Keep heart centered and slightly smaller */
+    .heart-svg {
+        width: 240px;
+    }
+
+    /* Move heading below the heart */
+    .rising-text {
+        bottom: 190px;
+        left: 0;
+
+        width: 100%;
+
+        font-size: 38px;
+        line-height: 42px;
+
+        /* Important: override desktop animation position */
+        animation-name: riseTextMobile;
+    }
+
+    /* Put button below the heading */
     #enterWedding {
-        bottom: 235px;
+        bottom: 110px;
 
         padding: 12px 25px;
 
@@ -291,6 +313,25 @@ body {
 
         font-size: 11px;
         letter-spacing: 2.5px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE TEXT ANIMATION
+========================================= */
+
+@keyframes riseTextMobile {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 
 }
